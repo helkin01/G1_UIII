@@ -1,9 +1,6 @@
 ---
 title: "Grupo 1: Guía para la Anotación de Imágenes"
 author: "G1_U III"
-
-
-
 format:
   html:
     theme: cosmo
@@ -26,7 +23,6 @@ Integrantes:
 -Vera Campos Jhoneyda 
 
 -Valqui Vargas Llanely 
-
 
 # **Anaconda**
 
