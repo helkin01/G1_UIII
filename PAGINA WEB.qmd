@@ -1,0 +1,212 @@
+---
+title: "Grupo 1: Guía para la Anotación de Imágenes"
+author: "G1_U III"
+
+
+
+format:
+  html:
+    theme: cosmo
+    number-sections: true
+    toc: true
+    toc-location: left
+    self-contained: true
+---
+
+Integrantes:
+
+-Maldonado Ticliahuanca Helkin 
+
+-Montano Salazar Segundo Bernabe
+
+-Neyra Alarcon Shirley Milagros 
+
+-Olascoaga Villalobos Jhonatan 
+
+-Vera Campos Jhoneyda 
+
+-Valqui Vargas Llanely 
+
+
+# **Anaconda**
+
+![](images/conda.jpg)
+
+Es una plataforma que facilita el uso de Python y R para realizar tareas de análisis de datos, ciencia de datos, aprendizaje automático y computación científica. Anaconda y sus herramientas asociadas son altamente relevantes en la agricultura debido a su capacidad para gestionar y analizar grandes volúmenes de datos.
+
+
+# **¿Qué es Label Studio?**
+
+![](images/label.jpg)
+
+Permite a los usuarios crear y gestionar anotaciones de datos de manera eficiente. Su propósito es proporcionar una plataforma fácil de usar para realizar tareas de etiquetado que son cruciales para entrenar modelos de IA. Las anotaciones pueden incluir tareas como clasificación, segmentación, detección de objetos, y más. Label Studio se puede instalar en un servidor local o ejecutarse en la nube. La instalación local se puede hacer usando Docker o simplemente instalando el paquete con pip: pip install label-studio y luego label-studio.
+
+## **¿Para qué sirve?**
+
+Label Studio sirve para anotar (etiquetar) datos, principalmente imágenes, pero también texto, audio y video. Es una herramienta clave en Inteligencia Artificial, visión artificial, agricultura de precisión e investigación científica.
+
+## **¿Qué aprenderá el lector en esta página?**
+
+En esta página aprenderás, de manera sencilla y visual, cómo utilizar Label Studio para crear un proyecto de anotación de imágenes desde cero. Conocerás cómo configurar tu entorno, cargar tus archivos, aplicar etiquetas personalizadas y exportar tus resultados. Además, verás ejemplos paso a paso con capturas reales del proceso para que puedas replicarlo fácilmente en tu propio proyecto.
+
+
+## **¿Qué es la anotación de imágenes?**
+
+- La anotación de imágenes es el proceso de identificar, marcar y describir elementos dentro de una imagen para que puedan ser entendidos por un sistema de inteligencia artificial. Consiste en agregar etiquetas, cuadros delimitadores, puntos clave u otras marcas que indiquen qué objetos aparecen y dónde se encuentran.
+
+- Este proceso es fundamental para entrenar modelos de visión por computadora, ya que permite que una IA aprenda a reconocer patrones, clasificar objetos y tomar decisiones basadas en imágenes reales.
+
+
+# **Crear un Proyecto en Label Studio**
+
+Texto explicativo:
+
+**¿Cómo abrir Label Studio?**
+
+Para comenzar, abre Label Studio desde tu navegador ingresando a la dirección donde lo instalaste. Una vez cargada la plataforma, verás el panel principal que muestra tus proyectos existentes y la opción para crear uno nuevo.
+
+**¿Dónde hacer clic?**
+
+En la parte superior o en el lado derecho de la pantalla encontrarás el botón “Create Project” o “Nuevo Proyecto”. Haz clic allí para iniciar la configuración.
+
+Esto te llevará a una nueva ventana donde podrás definir los detalles iniciales del proyecto.
+
+**¿Qué datos llenar?**
+
+En el formulario de creación del proyecto deberás completar:
+
+- Project Name (Nombre del proyecto): un título descriptivo para identificar tu trabajo.
+
+- Description (Descripción): un resumen breve del objetivo del proyecto o del tipo de anotación que vas a realizar.
+
+- Labeling Configuration (Configuración de etiquetas): aquí definirás qué tipo de anotación quieres usar (por ejemplo, bounding boxes, clasificación, puntos, etc.).
+
+- Importar datos: finalmente, podrás subir tus imágenes arrastrándolas o seleccionándolas desde tu computadora.
+
+# **Configuración del Proyecto**
+
+Cuando se crea un proyecto en Label Studio, el primer paso es definir el tipo de tarea de anotación, ya que esto determina las herramientas que aparecerán durante el etiquetado.
+
+Elegir el tipo de tarea
+
+- Label Studio ofrece plantillas listas para usar según el objetivo del proyecto:
+Clasificación de imágenes: asigna una etiqueta general a cada imagen.
+
+
+- Detección de objetos: permite dibujar cuadros alrededor de elementos específicos.
+
+
+- Segmentación: marca áreas concretas mediante polígonos o máscaras.
+Estas configuraciones pueden ajustarse desde la sección Labeling Configuration.
+
+## **Subir datos**
+
+Luego se cargan los archivos al proyecto. Se pueden importar imágenes, videos, textos o audios desde la computadora o desde servicios externos.
+
+Todos los datos quedan organizados en el Data Manager.
+
+## **Etiquetar**
+
+La interfaz se adapta automáticamente según la tarea:
+ cuadros para detección, polígonos para segmentación o botones de etiquetas para clasificación.
+ 
+ El usuario solo selecciona la etiqueta y realiza la marca correspondiente.
+
+
+## **Revisar y exportar**
+
+Las anotaciones pueden revisarse para asegurar calidad.
+
+Finalmente, los resultados se exportan en formatos como JSON, CSV, COCO o YOLO, listos para usarse en el entrenamiento de modelos de IA.
+
+# **Importación de Imágenes**
+
+**Formato de archivos aceptados**
+
+-Usa preferentemente .jpg o .png
+
+-Procura que las imágenes tengan buena resolución (mínimo 640 × 480 píxeles)
+
+-Evitar fotos borrosas u oscuras
+
+**¿Cómo subirlos?**
+
+Sigue estos pasos dentro de Label Studio:
+
+-Ingresa a tu proyecto (por ejemplo: “Anotación de imágenes de aguaymanto”)
+
+-Ve a la pestaña Import
+
+-Haz clic en el botón:Upload files o Upload data
+
+-Se abrirá una ventana del explorador de tu computadora
+
+-Selecciona:
+  Una imagen
+  O varias imágenes (presionando Ctrl + clic)
+  O toda una carpeta
+
+-Haz clic en Open / Abrir
+
+-Luego haz clic en: Import
+
+-Espera unos segundos mientras se suben las imágenes.
+
+-Cuando termine, verás un mensaje indicando que la importación fue exitosa.
+
+# **Ejemplo: Proyecto Aguaymanto**
+
+## **Creamos nuestro proyecto**
+
+![](images/cap1.jpg)
+
+## **Subimos las imagenes de hojas de aguaymanto**
+
+![](images/cap2.jpg)
+
+## **Definir tareas de etiquetado**
+
+![](images/cap3.jpg)
+
+## **Código para trabajar las anotaciones con los compañeros**
+
+![](images/cod.jpg)
+
+
+## **Realizar el etiquetado**
+
+![](images/cap4.jpg)
+
+## **Revisión y ajuste del etiquetado**
+
+![](images/cap5.jpg)
+
+# **Resultados**
+
+Durante el desarrollo del proyecto se completó la anotación de todas las imágenes utilizando la herramienta de polígonos disponible en Label Studio, una plataforma especializada para la gestión y etiquetado de datos visuales (Heartex, 2024). Cada imagen fue procesada individualmente, verificando la precisión en el trazado de las áreas de interés y la asignación correcta de las etiquetas correspondientes.
+
+El uso de la función Submit permitió registrar cada anotación y avanzar de forma secuencial hacia la siguiente imagen, asegurando un flujo de trabajo ordenado y eficiente. Asimismo, la plataforma organizó automáticamente las tareas ya completadas, lo que facilitó el control del progreso.
+Para la administración del entorno de trabajo y las dependencias necesarias, se empleó la distribución Anaconda, reconocida por su eficiencia en la gestión de entornos y paquetes para proyectos científicos y de análisis de datos (Anaconda, Inc., 2024).
+
+Al finalizar, el conjunto de datos quedó totalmente anotado y listo para su exportación en formatos compatibles con modelos de visión por computadora, lo que garantiza su aplicabilidad en futuras etapas de procesamiento o entrenamiento de algoritmos.
+
+# **Conclusiones**
+
+El trabajo realizado permitió demostrar que Label Studio constituye una plataforma eficiente y fiable para la anotación de datos visuales. Su diseño intuitivo y la disposición de herramientas especializadas como los polígonos para segmentación facilitaron la elaboración de anotaciones precisas y coherentes.
+El proceso, que comprendió la configuración del proyecto, la carga de datos, el etiquetado y la exportación, se desarrolló con claridad y de manera ordenada, lo que resultó en un conjunto de datos consistente y metodológicamente adecuado. En consecuencia, se confirma que una correcta gestión de la anotación es fundamental para la construcción de bases de datos de calidad, esenciales en la formación de modelos de inteligencia artificial orientados a tareas de reconocimiento y análisis de imágenes.
+
+# **Referencias**
+ 
+Heartex. (2024). Label Studio: Open Source Data Labeling Tool [Software]. Heartex Technologies. https://labelstud.io
+
+Anaconda, Inc. (2024). Anaconda Distribution [Software]. Anaconda, Inc. https://www.anaconda.com/products/distribution
+
+
+
+
+
+
+
+
+
+
