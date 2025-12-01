@@ -1,6 +1,6 @@
 ---
-title: "Grupo 1: Guía para la Anotación de Imágenes"
-author: "G1_U III"
+title: "Guía para la Anotación de Imágenes"
+author: "U_III G1"
 format:
   html:
     theme: cosmo
