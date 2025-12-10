@@ -1,8 +1,6 @@
 ---
-title: "Grupo 1: Guía para la Anotación de Imágenes"
-author: "G1_U III"
-
-
+title: "Guía para la Anotación de Imágenes"
+author: "U_III G1"
 format:
   html:
     theme: cosmo
@@ -11,6 +9,20 @@ format:
     toc-location: left
     self-contained: true
 ---
+
+Integrantes:
+
+-Maldonado Ticliahuanca Helkin 
+
+-Montano Salazar Segundo Bernabe
+
+-Neyra Alarcon Shirley Milagros 
+
+-Olascoaga Villalobos Jhonatan 
+
+-Vera Campos Jhoneyda 
+
+-Valqui Vargas Llanely 
 
 # **Anaconda**
 
